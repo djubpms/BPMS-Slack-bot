@@ -79,6 +79,9 @@ class MagiIO:
                     pass
                 except KeyError:
                     pass
+                except TypeError:
+                    logging.info('Callback function argument need *args.')
+                    print('Callback function argument need *args.')
 
             sleep(1)
 
